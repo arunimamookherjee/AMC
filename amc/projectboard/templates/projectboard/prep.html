@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+
+
+    <form method="get" action="prep_ke_baad.html" id="usrform">
+	<table>
+
+    <tr>
+        <td>Filename to Save As:</td>
+        <td><input name="title" id="inputFileNameToSaveAs"/></td>
+        <!-- <td><button onclick="saveTextAsFile()">Save Text to File</button></td> -->
+    </tr>
+    <tr>
+        <td>Select a File to Load:</td>
+        <td><input type="file" id="fileToLoad"></td>
+        <td><div style="border:thick solid black;" onclick="loadFileAsText()">Load Selected File</div><td>
+    </tr>
+    <tr>
+         <td><div>
+          <label><input type="radio" name="optradio" value="amc">amc text file type</label>
+          </div>
+          <div>
+          <label><input type="radio" name="optradio" value="latex">latex file type</label>
+          </div>
+         </td>
+   </tr>
+        <tr> <input type="text" style="visibility: hidden" id="type"> </tr>
+   </table>
+
+
+
+
+
+   <input type="submit">
+        <textarea name="name2"  cols="80" rows="25" id="inputTextToSave" form="usrform">Enter text here...</textarea>
+    </form>
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function ()
+    {
+        $(".gender").change(function () {
+
+        var val = $('.gender:checked').val();
+        alert(val);
+        });
+    });
+
+
+
+function saveTextAsFile()
+{
+    var textToSave = document.getElementById("inputTextToSave").value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+}
+
+function destroyClickedElement(event)
+{
+    document.body.removeChild(event.target);
+}
+
+function loadFileAsText()
+{
+    var fileToLoad = document.getElementById("fileToLoad").files[0];
+
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent)
+    {
+        var textFromFileLoaded = fileLoadedEvent.target.result;
+        document.getElementById("inputTextToSave").value = textFromFileLoaded;
+    };
+    fileReader.readAsText(fileToLoad, "UTF-8");
+}
+
+</script>
+    </div>
+</body>
+</html>

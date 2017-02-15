@@ -1,0 +1,126 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <title>HOME PAGE</title>
+
+
+
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Chewy|Indie+Flower|Pacifico|VT323|Vampiro+One" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/controller2.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../static/projectboard/css/base.css">
+
+  </head>
+ <body >
+ <div id="grad1">
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="#">Auto Multiple Choice</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a ui-sref="home">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a class="dropdown-toggle" data-toggle="dropdown" ui-sref="#">Language<span class="caret"></span></a>
+       <ul class="dropdown-menu">
+          <li><a href="#">French</a></li>
+          <li><a href="#">English</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid" ui-view >
+ <section id="lab">
+    <article>
+
+        <div class="lab_item">
+        <a ui-sref="project">
+        <div class="hexagon hexagon2">
+
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-image: url(../../static/projectboard/img/icon3.png);">
+                 </div>
+             </div>
+         </div></a>
+         </div>
+          <div class="lab_item">
+          <a ui-sref="dashboard">
+          <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-image: url(../../static/projectboard/img/icon2.png);">
+                </div>
+             </div>
+         </div></a>
+         </div>
+ <div class="lab_item">
+ <a ui-sref="features">
+          <div class="hexagon hexagon2">
+          <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-image: url(../../static/projectboard/img/icon5.png);">
+                </div>
+             </div>
+         </div></a>
+         </div>
+ <div class="lab_item">
+ <a ui-sref="help">
+          <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-image: url(../../static/projectboard/img/icon4png.png);">
+                </div>
+             </div>
+         </div></a>
+         </div>
+              <div class="lab_item">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" >
+                </div>
+             </div>
+         </div>
+         </div>
+          <div class="lab_item">
+          <a ui-sref="about">
+          <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-image: url(../../static/projectboard/img/icon1.png);">
+                </div>
+             </div>
+         </div></a>
+         </div>
+          <div class="lab_item">
+          <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2">
+                </div>
+             </div>
+         </div>
+         </div>
+
+         </article>
+</section>
+
+</div>
+</div>
+
+ <script>
+
+</script>
+</body></html>
