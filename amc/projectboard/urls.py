@@ -30,9 +30,9 @@ urlpatterns = [
     url(r'^disp.html$', views.index2, name='index2'),
     url(r'^modify$',views.modify, name='modify'),
     url(r'^markit$', views.markit, name='markit'),
-    #url(r'^markit2$', views.markit2, name='markit2'),
+    url(r'^markit2$', views.markit2, name='markit2'),
     url(r'^random$', views.random, name='random'),
-    url(r'create_post/$', views.create_post, name='create_post'),
+    url(r'create_post', views.create_post, name='create_post'),
 
     url(r'^view/(?P<id_remedio>\w+)/$', views.view, name='view'),
     url(r'^view/$', views.view, name='view')

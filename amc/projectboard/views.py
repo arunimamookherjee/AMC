@@ -84,7 +84,7 @@ def markit2(request):
     return HttpResponseRedirect("/projectboard/base.html#/project2")
 
 def random(request):
-    os.system('python pypy.py')
+    os.system('sudo python /home/sony/environments/amc5.0/amc/projectboard/pypy.py')
    # data = open('/').read()  # opens the json file and saves the raw contents
     #jsonData = json.dumps(data)  #
 
@@ -107,5 +107,3 @@ def create_post(request):
             json.dumps({"nothing to see": "this isn't happening"}),
             content_type="application/json"
         )
-
-
