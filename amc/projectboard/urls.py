@@ -33,7 +33,5 @@ urlpatterns = [
     url(r'^markit2$', views.markit2, name='markit2'),
     url(r'^random$', views.random, name='random'),
     url(r'create_post', views.create_post, name='create_post'),
-
-    url(r'^view/(?P<id_remedio>\w+)/$', views.view, name='view'),
-    url(r'^view/$', views.view, name='view')
+    url(r'^view$', views.view, name='view')
     ]

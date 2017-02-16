@@ -1,18 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render_to_response
 
 # Create your views here.
 from django.shortcuts import render, HttpResponseRedirect
 import sys, os
 import json
 from django.http import JsonResponse
+from django.template import Context, Template
 from tempfile import *
-
 import subprocess
 
 
 # Create your views here.
 from django.http import HttpResponse
 
+file_name=""
 
 
 
@@ -22,8 +23,20 @@ def modify(request):
     return HttpResponseRedirect("/projectboard/base.html#/about")
 
 
+
+def ajax_view(request):
+    # some random context
+    context = Context({'items': range(100)})
+    # passing the template_name + block_name + context
+   # return_str = render_block_to_string('standard/subtemplate.html', 'results', context)
+    return_str="lol"
+    return HttpResponse(return_str)
+
+
 def index(request):
     title=request.GET['title']
+    file_name=title
+    print(file_name)
     file_detail=request.GET['name2']
     type=request.GET['optradio']
     ##number=request.GET['number']
@@ -54,17 +67,16 @@ def index(request):
 def index2(request):
     os.system("pwd")
     title=request.GET['project_name']
-    cmd1="sudo xdg-open /root/Projects/"+title +"/amc-compiled.pdf"
+    cmd1="sudo xdg-open /root/Projects/"+file_name +"/amc-compiled.pdf"
+    print(file_name)
 
     os.system(cmd1)
     return HttpResponseRedirect("/projectboard/base.html#/project2")
 
 def view(request):
-
-    if request.method == 'GET':
-        fruit = request.GET['fruit']
-
-    return render(request, "projectboard/about.html", {'personal_detail':fruit})
+    def view(request):
+        data = {"name": "daredevil"}
+        return render_to_response('projectboard/about.html', {'my_data': data})
 
 
 def markit(request):
