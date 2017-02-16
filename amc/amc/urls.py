@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'controller.js', TemplateView.as_view(template_name="projectboard/js/controller.js")),
     url(r'projectboard/project.html', TemplateView.as_view(template_name="projectboard/project.html")),
     url(r'projectboard/dashboard.html', TemplateView.as_view(template_name="projectboard/dashboard.html")),
+    url(r'projectboard/base.html#/about',TemplateView.as_view(template_name="projectboard/help.html")),
     url(r'projectboard/help.html', TemplateView.as_view(template_name="projectboard/help.html")),
     url(r'projectboard/about.html', TemplateView.as_view(template_name="projectboard/about.html")),
     url(r'projectboard/features.html', TemplateView.as_view(template_name="projectboard/features.html")),

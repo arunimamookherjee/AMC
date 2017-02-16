@@ -22,20 +22,11 @@ def modify(request):
     title=request.GET['title']
     return HttpResponseRedirect("/projectboard/base.html#/about")
 
-
-
-def ajax_view(request):
-    # some random context
-    context = Context({'items': range(100)})
-    # passing the template_name + block_name + context
-   # return_str = render_block_to_string('standard/subtemplate.html', 'results', context)
-    return_str="lol"
-    return HttpResponse(return_str)
-
-
+#######################################################################
+ #generates the folder and the question paper
 def index(request):
     title=request.GET['title']
-    file_name=title
+
     print(file_name)
     file_detail=request.GET['name2']
     type=request.GET['optradio']
@@ -54,8 +45,6 @@ def index(request):
 
     if type=="amc":
             command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTextTest.py " + title+" "+"2"
-
-
     else:
         command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTest.py " + title
 
@@ -64,20 +53,22 @@ def index(request):
 
     return HttpResponseRedirect("/projectboard/base.html#/project2")
 
+#######################################################################
+
 def index2(request):
     os.system("pwd")
     title=request.GET['project_name']
+
     cmd1="sudo xdg-open /root/Projects/"+file_name +"/amc-compiled.pdf"
     print(file_name)
 
     os.system(cmd1)
     return HttpResponseRedirect("/projectboard/base.html#/project2")
-
+#######################################################################
 def view(request):
-    def view(request):
         data = {"name": "daredevil"}
-        return render_to_response('projectboard/about.html', {'my_data': data})
-
+        return render_to_response("projectboard/about.html", {'my_data':'arunima'})
+#######################################################################
 
 def markit(request):
     os.system('ls')
@@ -85,6 +76,8 @@ def markit(request):
     command="sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_analyzeCopies.py "+title
     os.system(command)
     return HttpResponseRedirect("/projectboard/base.html#/project2")
+#######################################################################
+
 
 def markit2(request):
     title=request.GET['file']
@@ -94,6 +87,7 @@ def markit2(request):
     os.system("sudo python /root/Projects/intoJSON.py ")
 
     return HttpResponseRedirect("/projectboard/base.html#/project2")
+#######################################################################
 
 def random(request):
     os.system('sudo python /home/sony/environments/amc5.0/amc/projectboard/pypy.py')
@@ -105,6 +99,7 @@ def random(request):
         data = json.load(f)
 
     return HttpResponse(data, content_type="application/json")
+#######################################################################
 
 def create_post(request):
     if request.method == 'GET':
@@ -119,3 +114,4 @@ def create_post(request):
             json.dumps({"nothing to see": "this isn't happening"}),
             content_type="application/json"
         )
+#######################################################################
