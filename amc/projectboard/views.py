@@ -26,7 +26,8 @@ def modify(request):
  #generates the folder and the question paper
 def index(request):
     title=request.GET['title']
-
+    global   file_name
+    file_name=title
     print(file_name)
     file_detail=request.GET['name2']
     type=request.GET['optradio']
@@ -51,6 +52,7 @@ def index(request):
 
     os.system(command2)
 
+
     return HttpResponseRedirect("/projectboard/base.html#/project2")
 
 #######################################################################
@@ -68,6 +70,7 @@ def index2(request):
 def view(request):
         data = {"name": "daredevil"}
         return render_to_response("projectboard/about.html", {'my_data':'arunima'})
+        ##return HttpResponseRedirect("/projectboard/base.html#/about")
 #######################################################################
 
 def markit(request):
