@@ -112,6 +112,8 @@ def random(request):
 #######################################################################
 
 def create_post(request):
+    os.system('sudo python /root/Projects/intoJSON.py')
+
     if request.method == 'GET':
         with open('out.json', 'r') as f:
             data = json.load(f)

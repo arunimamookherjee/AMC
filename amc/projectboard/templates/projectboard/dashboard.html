@@ -16,17 +16,17 @@
     </form>
 -->
 
-    <form method="get" action="create_post" id="post-form">
+    <form method="get" action="create_post" id="post-form" style="visibility: hidden"><input type="submit"> </form>
 
-        <input type="submit">
 
-    </form>
+    <h5 id="lol"></h5>
 
 
 
 
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
+        var obj;
         function create_post()
         {
                 console.log("create post is working!"); // sanity check
@@ -36,9 +36,11 @@
                     type : "get", // http method
 
                     success : function(json) {
-
+                        obj=json;
                         console.log(json); // log the returned json to the console
+
                         console.log("success"); // another sanity check
+                         display();
                     },
                     // handle a non-successful response
                     error : function(xhr,errmsg,err) {
@@ -47,12 +49,25 @@
                         console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
                     }
                 });
-    }
-         $('#post-form').on('submit', function(event){
+
+
+         }
+        $(document).ready(create_post());
+
+        function display() {
+            var dis;
+
+            console.log(obj[1].name)
+        }
+
+
+
+
+       /*  $('#post-form').on('submit', function(event){
         event.preventDefault();
         console.log("form submitted!");  // sanity check
         create_post();
-        });
+        });*/
    /* $(document).ready(function(){
         $("#mySelect").change(function(){
             selected ="apple";
