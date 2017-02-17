@@ -15,6 +15,7 @@
         <td>Filename to Save As:</td>
         <td><input name="title" id="inputFileNameToSaveAs"/></td>
         <!-- <td><button onclick="saveTextAsFile()">Save Text to File</button></td> -->
+
     </tr>
     <tr>
         <td>Select a File to Load:</td>
@@ -22,6 +23,11 @@
         <td><div style="border:thick solid black;" onclick="loadFileAsText()">Load Selected File</div><td>
     </tr>
     <tr>
+         <td>
+                <input type="text" name="no" id="no"/>
+        </td>
+    </tr>
+        <tr>
          <td><div>
           <label><input type="radio" name="optradio" value="amc">amc text file type</label>
           </div>
@@ -29,10 +35,12 @@
           <label><input type="radio" name="optradio" value="latex">latex file type</label>
           </div>
          </td>
+
+
+
    </tr>
         <tr> <input type="text" style="visibility: hidden" id="type"> </tr>
    </table>
-
 
 
 

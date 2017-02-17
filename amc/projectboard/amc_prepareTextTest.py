@@ -2,7 +2,7 @@ import os
 import sys
 
 command1="auto-multiple-choice prepare --with xelatex --filter plain --filtered-source /root/Projects/"+sys.argv[1]+"/DOC-filtered.tex" \
-         "  --out-sujet /root/Projects/"+sys.argv[1]+"/DOC-sujet.pdf --out-corrige /root/Projects/"+sys.argv[1]+"/DOC-corrige.pdf --out-catalog" \
+         "  --out-sujet /root/Projects/"+sys.argv[1]+"/DOC-subject.pdf --out-corrige /root/Projects/"+sys.argv[1]+"/DOC-corrige.pdf --out-catalog" \
           " /root/Projects/"+sys.argv[1]+"/DOC-catalog.pdf --out-calage /root/Projects/"+sys.argv[1]+"/DOC-calage.xy --mode s[sc] --n-copies "+sys.argv[2]+" " \
          "/root/Projects/"+sys.argv[1]+"/test.txt --prefix /root/Projects/"+sys.argv[1]+"/ --latex-stdout"
 

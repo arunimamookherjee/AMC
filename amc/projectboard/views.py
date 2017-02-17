@@ -31,9 +31,9 @@ def index(request):
     print(file_name)
     file_detail=request.GET['name2']
     type=request.GET['optradio']
+    command3=""
+    number=request.GET['no']
 
-    ##number=request.GET['number']
-    number=2
     command="sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_python.py "+title
     os.system(command)
     os.chdir("/root")
@@ -52,7 +52,7 @@ def index(request):
     os.system(command3)
 
     if type=="amc":
-        command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTextTest.py " + title+" 2"
+        command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTextTest.py " + title+" "+number
     else:
         command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTest.py " + title
 
@@ -68,7 +68,7 @@ def index2(request):
     os.system("pwd")
     title=request.GET['project_name']
 
-    cmd1="sudo xdg-open /root/Projects/"+file_name +"/amc-compiled.pdf"
+    cmd1="sudo xdg-open /root/Projects/"+file_name +"/DOC-subject.pdf"
     print(file_name)
 
     os.system(cmd1)
