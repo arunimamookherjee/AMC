@@ -31,21 +31,28 @@ def index(request):
     print(file_name)
     file_detail=request.GET['name2']
     type=request.GET['optradio']
+
     ##number=request.GET['number']
     number=2
     command="sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_python.py "+title
     os.system(command)
     os.chdir("/root")
-    file_loc = "test.tex"
+    if(type=="latex"):
+        file_loc = "test.tex"
+        command3 = "sudo mv test.tex /root/Projects/" + title
+    elif(type=="amc"):
+        file_loc="test.txt"
+        command3 = "sudo mv test.txt /root/Projects/" + title
+
     f = open(file_loc, "w+")
     f.write(file_detail)
     f.close()
 
-    command3="sudo mv test.tex /root/Projects/"+title
+
     os.system(command3)
 
     if type=="amc":
-            command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTextTest.py " + title+" "+"2"
+        command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTextTest.py " + title+" 2"
     else:
         command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTest.py " + title
 
