@@ -20,7 +20,9 @@
 
 
     <h5 id="lol"></h5>
+    <div id="ins">
 
+    </div>
 
 
 
@@ -57,8 +59,13 @@
         function display() {
             var dis;
 
-            console.log(obj[1].name)
+            console.log(obj.length);
+            for (var i = 0; i < obj.length; i++) {
+                var ins = '<h4>' + obj[i].name+ '</h4>';
+                $('#ins').append(ins);
+            }
         }
+
 
 
 

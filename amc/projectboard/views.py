@@ -14,25 +14,60 @@ import subprocess
 from django.http import HttpResponse
 
 file_name=""
+ftype=""
 
 
 
 
 def modify(request):
-    title=request.GET['title']
-    return HttpResponseRedirect("/projectboard/base.html#/about")
+
+    number=request.GET['number']
+    text=request.GET['name2']
+
+    print(ftype)
+    command3 = ""
+    command2=""
+    file_loc = ""
+
+    if (ftype == "latex"):
+        file_loc = "test.tex"
+        command3 = "sudo mv test.tex /root/Projects/" + file_name
+
+    elif (ftype == "amc"):
+        file_loc = "test.txt"
+        command3 = "sudo mv test.txt /root/Projects/" + file_name
+
+    f = open(file_loc, "w+")
+    f.write(text)
+    f.close()
+    os.system(command3)
+
+    if ftype == "amc":
+        command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTextTest.py " +file_name + " " + number
+    elif ftype=="latex":
+        command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTest.py " + file_name+" "+number
+
+    os.system(command2)
+
+    return HttpResponseRedirect("/projectboard/base.html#/project2")
 
 #######################################################################
  #generates the folder and the question paper
 def index(request):
     title=request.GET['title']
+
+    file_detail = request.GET['name2']
+    type = request.GET['optradio']
+    command3 = ""
+    file_loc=""
+    number = request.GET['no']
+
     global   file_name
     file_name=title
     print(file_name)
-    file_detail=request.GET['name2']
-    type=request.GET['optradio']
-    command3=""
-    number=request.GET['no']
+
+    global ftype
+    ftype = type
 
     command="sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_python.py "+title
     os.system(command)
@@ -40,9 +75,12 @@ def index(request):
     if(type=="latex"):
         file_loc = "test.tex"
         command3 = "sudo mv test.tex /root/Projects/" + title
+
     elif(type=="amc"):
         file_loc="test.txt"
         command3 = "sudo mv test.txt /root/Projects/" + title
+
+
 
     f = open(file_loc, "w+")
     f.write(file_detail)
@@ -54,7 +92,7 @@ def index(request):
     if type=="amc":
         command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTextTest.py " + title+" "+number
     else:
-        command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTest.py " + title
+        command2 = "sudo python3 /home/sony/environments/amc5.0/amc/projectboard/amc_prepareTest.py " + title+" "+number
 
 
     os.system(command2)
