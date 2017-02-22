@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/projectboard/views.py" line="84" />
+    <bookmark url="file://$PROJECT_DIR$/projectboard/views.py" line="122" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="833a9140-d5c1-48fa-973f-ccd735eddf0a" name="Default" comment="" />
@@ -21,33 +21,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="prep.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/prep.html">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="65" lean-forward="true" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+            <state relative-caret-position="1170">
+              <caret line="78" column="41" lean-forward="false" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/dashboard.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projectboard/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/project2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -56,8 +44,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projectboard/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="114" column="55" lean-forward="true" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
+            <state relative-caret-position="510">
+              <caret line="47" column="114" lean-forward="false" selection-start-line="47" selection-start-column="114" selection-end-line="47" selection-end-column="114" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -65,22 +53,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="out.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/out.json">
+      <file leaf-file-name="project2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/project2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="495">
+              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/about.html">
+      <file leaf-file-name="prep.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/prep.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="645">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#td#2;n#tr#1;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +79,8 @@
       <file leaf-file-name="amc_prepareTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projectboard/amc_prepareTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            <state relative-caret-position="135">
+              <caret line="10" column="106" lean-forward="false" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="106" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -100,8 +91,8 @@
       <file leaf-file-name="amc_prepareTextTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projectboard/amc_prepareTextTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="119" lean-forward="false" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
+            <state relative-caret-position="255">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -111,20 +102,37 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>source</replace>
+    </replaceStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/projectboard/urls.py" />
         <option value="$PROJECT_DIR$/projectboard/templates/projectboard/about.html" />
         <option value="$PROJECT_DIR$/amc/urls.py" />
-        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/preparation.html" />
-        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/prep.html" />
         <option value="$PROJECT_DIR$/projectboard/amc_prepareTextTest.py" />
-        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/project2.html" />
-        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/dashboard.html" />
         <option value="$PROJECT_DIR$/projectboard/pypy.py" />
         <option value="/root/Projects/intoJSON.py" />
+        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/dashboard.html" />
+        <option value="$PROJECT_DIR$/projectboard/amc_modify.py" />
+        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/preparation.html" />
+        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/prep.html" />
+        <option value="$PROJECT_DIR$/projectboard/amc_prepareTest.py" />
         <option value="$PROJECT_DIR$/projectboard/views.py" />
+        <option value="$PROJECT_DIR$/projectboard/templates/projectboard/project2.html" />
       </list>
     </option>
   </component>
@@ -136,9 +144,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="52" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -156,6 +164,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,7 +229,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,7 +519,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="65" y="52" width="1855" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15309973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -567,31 +575,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projectboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding>
-            <element signature="e#1287#1332#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="52" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -623,9 +609,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -633,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,9 +624,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="93" lean-forward="true" selection-start-line="1" selection-start-column="93" selection-end-line="1" selection-end-column="93" />
-          <folding>
-            <element signature="e#1287#1332#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,9 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,9 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#1287#1332#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,9 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" column="5" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,9 +700,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#1287#1332#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,9 +734,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,9 +749,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1287#1332#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -818,9 +781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding>
-            <element signature="e#1287#1332#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -871,17 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="52" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding>
-            <element signature="e#1287#1332#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,75 +843,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/preparation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/prep.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="65" lean-forward="true" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/amc_prepareTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/amc_prepareTextTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="119" lean-forward="false" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///root/Projects/intoJSON.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/project2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,17 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectboard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="114" column="55" lean-forward="true" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,6 +861,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/amc_modify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/amc_python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/amc_prepareTextTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/preparation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="81" lean-forward="false" selection-start-line="34" selection-start-column="81" selection-end-line="34" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="41" lean-forward="false" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/amc_prepareTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="106" lean-forward="false" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="106" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/prep.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#2;n#tr#1;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="47" column="114" lean-forward="false" selection-start-line="47" selection-start-column="114" selection-end-line="47" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectboard/templates/projectboard/project2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding />
         </state>
       </provider>

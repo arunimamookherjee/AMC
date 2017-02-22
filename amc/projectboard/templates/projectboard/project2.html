@@ -15,17 +15,23 @@
         <input type="submit" value="Click to view Pdf " class="btn btn-default">
     </form>
 
-    <form method="get" action="view">
-        <input type="text" style="visibility: hidden" name="title" value="hello1085">
-        <textarea name="name2"  style="visibility: hidden" id="inputTextToSave" form="usrform">Enter text here...</textarea><br>
-        <br>
-        <input type="submit" value="Not happy with the question paper... modify it!"  class="btn btn-default">
+    <form method="get" action="modify">
 
+         <div id="invisi" class="btn btn-default">Not happy with the question paper... modify it!"</div>
+        <br><br>
+                <div>
+                 No. of Question Papers<input type="text" name="number">
+                    <br>
+                <textarea name="name2"  rows="20" cols="40">Enter text here...</textarea>
+                     <br><br>
+                <input type="submit" value="Modify" class="btn btn-default">
+        </div>
     </form>
     <br><br>
     <form method="get" action="markit">
         <input type="text" style="visibility: hidden" name="file" value="hello7.0">
-        <div> UPLOAD SCANS</div>
+        <div  class="btn btn-default"> UPLOAD SCANS</div>
+        <br><br>
         <input type="submit" value="Analyse Your Documents!"  class="btn btn-default">
 
     </form>
@@ -41,7 +47,7 @@
 
 
 
-</div>
+</form>
 
 </div>
 
