@@ -10,6 +10,7 @@ urlpatterns = [
 
     url(r'^projectboard/base.html',  TemplateView.as_view(template_name="projectboard/base.html")),
     url(r'projectboard/', include('projectboard.urls')),
+    url(r'projectboard/home.html', TemplateView.as_view(template_name="projectboard/home.html")),
     url(r'controller2.js', TemplateView.as_view(template_name="projectboard/js/controller2.js")),
     url(r'preparation.html',TemplateView.as_view(template_name="projectboard/prep.html")),
     url(r'app.js', TemplateView.as_view(template_name="projectboard/js/app.js")),
