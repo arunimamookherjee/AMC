@@ -104,9 +104,14 @@ def index(request):
 
 def index2(request):
     os.system("pwd")
-    title=request.GET['project_name']
+    os.chdir("/root/Projects")
+    os.system("pwd")
+    global file_name
+    title=file_name
+    print(file_name)
 
-    cmd1="sudo xdg-open /root/Projects/"+file_name +"/DOC-subject.pdf"
+
+    cmd1="sudo xdg-open /root/Projects/"+title +"/DOC-subject.pdf"
     print(file_name)
 
     os.system(cmd1)
@@ -125,7 +130,12 @@ def markit(request):
     os.system(command)
     return HttpResponseRedirect("/projectboard/base.html#/project2")
 #######################################################################
+def dash(request):
+    global file_name
+    file_name=request.GET['title']
+    return HttpResponseRedirect("/projectboard/base.html#/project2")
 
+#######################################################################
 
 def markit2(request):
     title=request.GET['file']
