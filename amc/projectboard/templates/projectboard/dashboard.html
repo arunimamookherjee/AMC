@@ -2,6 +2,11 @@
     <form method="get" action="create_post" id="post-form" style="visibility: hidden"><input type="submit"> </form>
 <h5 id="lol"></h5>
     <div id="ins"></div>
+
+    <form style="visibility: hidden" method="get" id="myform" action="dash">
+        <input type="text" name="title" id="txt1">
+        <input type="submit">
+    </form>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         var obj;
@@ -27,6 +32,13 @@
                 });
          }
         $(document).ready(create_post());
+        function reply_click(clicked_id)
+        {
+            document.getElementById('txt1').value = clicked_id;
+            console.log(clicked_id);
+              var form = document.getElementById("myform");
+              form.submit();
+        }
 
         function display(){
 
@@ -39,7 +51,7 @@
               console.log(" ");
             }
             else{
-              var ins = '<h4>' + myFileName + '</h4>';
+              var ins = "<h4 id="+myFileName+" onClick='reply_click(this.id)'> "+ myFileName + "</h4>";
               $('#ins').append(ins);
             }
           }
