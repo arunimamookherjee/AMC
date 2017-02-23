@@ -1,0 +1,76 @@
+
+<div>
+<div> 
+<br><script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/controller2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<br>
+
+<br>
+<br>
+
+     <form method="get" action="disp.html" id="post-form">
+         <input type="text" name="project_name" style="visibility: hidden" value="hello7.0">
+        <input type="submit" value="Click to view Pdf " class="btn btn-default">
+    </form>
+
+    <form method="get" action="view">
+        <input type="text" style="visibility: hidden" name="title" value="hello1085">
+        <textarea name="name2"  style="visibility: hidden" id="inputTextToSave" form="usrform">Enter text here...</textarea><br>
+        <br>
+        <input type="submit" value="Not happy with the question paper... modify it!"  class="btn btn-default">
+
+    </form>
+    <br><br>
+    <form method="get" action="markit">
+        <input type="text" style="visibility: hidden" name="file" value="hello7.0">
+        <div> UPLOAD SCANS</div>
+        <input type="submit" value="Analyse Your Documents!"  class="btn btn-default">
+
+    </form>
+    <form method="get" action="random">
+    <br><br>
+        <input type="text" style="visibility: hidden" name="file" value="hello7.0">
+        <input type="submit" value="Check Marks!"  class="btn btn-default">
+
+    </form>
+</p>
+
+
+
+
+
+</div>
+
+</div>
+
+<script>
+   /* function create_post()
+        {
+                console.log("create post is working!"); // sanity check
+                $.ajax
+                ({
+                    url : "index", // the endpoint
+                    type : "get", // http method
+
+                    success : function(json) {
+
+                        console.log(json); // log the returned json to the console
+                        console.log("success"); // another sanity check
+                    },
+                    // handle a non-successful response
+                    error : function(xhr,errmsg,err) {
+                        $('#results').html("<div class='alert-box alert radius' data-alert>Oops! We have encountered an error: "+errmsg+
+                            " <a href='#' class='close'>&times;</a></div>"); // add the error to the dom
+                        console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+                    }
+                });
+    }
+    $('#post-form').on('submit', function(event){
+        event.preventDefault();
+        console.log("form submitted!");  // sanity check
+        create_post();
+        });*/
+
+</script>

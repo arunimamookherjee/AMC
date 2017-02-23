@@ -1,0 +1,56 @@
+
+<div class=container>
+    <form method="get" action="create_post" id="post-form" style="visibility: hidden"><input type="submit"> </form>
+<h5 id="lol"></h5>
+    <div id="ins"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        var obj;
+        function create_post()
+        {
+                console.log("create post is working!"); // sanity check
+                $.ajax
+                ({
+                    url : "create_post", // the endpoint
+                    type : "get", // http method
+
+                    success : function(json) {
+                        obj=json;
+                        console.log(json); // log the returned json to the console
+
+                        console.log("success"); // another sanity check
+                         display();
+                    },
+                    // handle a non-successful response
+                    error : function(xhr,errmsg,err) {
+                        $('#results').html("<div class='alert-box alert radius' data-alert>Oops! We have encountered an error: "+errmsg+
+                            " <a href='#' class='close'>&times;</a></div>"); // add the error to the dom
+                        console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+                    }
+                });
+
+
+         }
+        $(document).ready(create_post());
+
+        
+        function display(){
+          
+          for(i=0;i<obj.length;i++)
+          {
+          var myFileName = obj[i].name;
+          var myFileExt = myFileName.substr((myFileName.lastIndexOf('.') + 1));
+            if(myFileExt=="sh" || myFileExt=="sh~" || myFileExt=="py" || myFileExt=="txt" || myFileExt=="tex" || myFileExt=="py~"|| myFileExt=="json~")
+            {
+              console.log(" ");
+            }
+            else{
+              var ins = '<h4>' + myFileName + '</h4>';
+              $('#ins').append(ins);
+            }
+          }
+        }
+      
+
+      </script>
+</div>
