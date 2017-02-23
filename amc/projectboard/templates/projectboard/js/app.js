@@ -41,6 +41,10 @@ angular.module('app', ['ui.router'])
     	url:'/preparation',
     	templateUrl:"preparation.html",
     });
-     $urlRouterProvider.otherwise('/');
+    $stateProvider
+    .state("home",{
+        url:'/home',
+        templateUrl:"home.html",
+    });
+     $urlRouterProvider.otherwise('/home');
  }]);
-
