@@ -148,7 +148,6 @@ def random(request):
 
     return HttpResponse(data, content_type="application/json")
 #######################################################################
-
 def create_post(request):
     os.system('sudo python /root/Projects/intoJSON.py')
 
