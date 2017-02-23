@@ -1,32 +1,10 @@
 
+
 <div class=container>
-<button type="button" class="btn btn-info btn-lg" ng-click="goto()"><span class="glyphicon glyphicon-star"></span></button>
-
-
-  <!--   <form action="view">
-        <br>
-    Select your favorite fruit:
-    <select id="mySelect">
-      <option value="apple" selected >Select fruit</option>
-      <option value="apple">Apple</option>
-      <option value="orange">Orange</option>
-      <option value="pineapple">Pineapple</option>
-      <option value="banana">Banana</option>
-    </select>
-    </form>
--->
-
     <form method="get" action="create_post" id="post-form" style="visibility: hidden"><input type="submit"> </form>
-
-
-    <h5 id="lol"></h5>
-    <div id="ins">
-
-    </div>
-
-
-
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<h5 id="lol"></h5>
+    <div id="ins"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         var obj;
         function create_post()
@@ -56,49 +34,24 @@
          }
         $(document).ready(create_post());
 
-        function display() {
-            var dis;
-
-            console.log(obj.length);
-            for (var i = 0; i < obj.length; i++) {
-                var ins = '<h4>' + obj[i].name+ '</h4>';
-                $('#ins').append(ins);
+        
+        function display(){
+          
+          for(i=0;i<obj.length;i++)
+          {
+          var myFileName = obj[i].name;
+          var myFileExt = myFileName.substr((myFileName.lastIndexOf('.') + 1));
+            if(myFileExt=="sh" || myFileExt=="sh~" || myFileExt=="py" || myFileExt=="txt" || myFileExt=="tex" || myFileExt=="py~"|| myFileExt=="json~" || myFileExt=="~" || myFileExt=="tex" || myFileExt=="js" myFileExt=="png" || myFileExt=="jpg" || myFileExt=="jpeg" || myFileExt=="ai" || myFileExt=="psd" || myFileExt=="xml" || myFileExt=="html" || myFileExt=="htm" || myFileExt=="svg" || myFileExt=="java" || myFileExt=="css" || myFileExt=="c" || myFileExt=="class")
+            {
+              console.log(" ");
             }
+            else{
+              var ins = '<h4>' + myFileName + '</h4>';
+              $('#ins').append(ins);
+            }
+          }
         }
+      
 
-
-
-
-
-       /*  $('#post-form').on('submit', function(event){
-        event.preventDefault();
-        console.log("form submitted!");  // sanity check
-        create_post();
-        });*/
-   /* $(document).ready(function(){
-        $("#mySelect").change(function(){
-            selected ="apple";
-            $.ajax({
-                type: 'GET',
-                dataType: 'json',
-                contentType: 'application/json; charset=utf-8',
-                url: '/projectboard/view/',
-                data: {
-                       'fruit': selected
-                      },
-                success: function(result) {
-                        document.write(result)
-                        }
-        });
-      });
-    });
-   */
-    </script>
-
-
-
-
-
-
-
+      </script>
 </div>
