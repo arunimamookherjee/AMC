@@ -251,3 +251,18 @@ table {
     height:25px;
     width: 275px;
   }
+.firstbutton {
+	float: right;
+	clear: both;
+	object-position: absolute;
+}
+.otherbutton {
+	text-align: right;
+		clear: both;
+ object-position: absolute;
+}
+.thirdbutton{
+   float: right;
+   object-position: absolute;
+   clear: both;
+}
