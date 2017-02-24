@@ -1,5 +1,5 @@
 
-<div>
+
 <div> 
 <br><script src="js/app.js"></script>
 <script src="js/controller.js"></script>
@@ -9,45 +9,46 @@
 
 <br>
 <br>
-
+    
      <form method="get" action="disp.html" id="post-form">
          <input type="text" name="project_name" style="visibility: hidden" value="hello7.0">
         <input type="submit" value="Click to view Pdf " class="btn btn-default">
     </form>
-
+    
+         
+    
+    
+    
     <form method="get" action="modify">
-
+          
          <div id="invisi" class="btn btn-default" onclick="showTextArea()">Not happy with the question paper... modify it!"</div>
         <br><br>
-            <div id="question" style="visibility: hidden;"><h4>No. of Question papers</h4><input type="text" name="number"></div>
+        
+            <div class="firstbutton" id="question" style="visibility: hidden;"><h4>No. of Question papers</h4><input type="text" name="number"></div>
             <br>
-            <div id="textAreaDiv"  style="visibility:hidden;"><textarea rows="20" cols="40"></textarea></div>    
+            <div class="otherbutton" id="textAreaDiv"  style="visibility:hidden;"><textarea rows="20" cols="40"></textarea></div>    
             <br>
-            <div id="submission" style="visibility: hidden;"><input type="submit" value="Modify" class="btn btn-default"></div>
+            <div class="thirdbutton" id="submission" style="visibility: hidden;"><input type="submit" value="Modify" class="btn btn-default"></div>
      </form>
-    <br><br>
-
-    <form method="get" action="markit">
+    
+    <form id="myForm" method="get" action="markit">
         <input type="text" style="visibility: hidden" name="file" value="hello7.0">
-        <div  class="btn btn-default"> UPLOAD SCANS</div>
-        <br><br>
+        <div  class="btn btn-default" onclick="showBrowser()"> upload student list</div>
+        <input type="file" onchange="this.form.submit();" id="browse" name="fileupload" style="visibility: hidden; display: none" onChange="Handlechange();"/>
+<input type="text"  id="filename" style="visibility: hidden;" readonly="true"/>
+<input type="button" value="Click to select file" id="fakeBrowse" style="visibility: hidden;" onclick="HandleBrowseClick();"/>
+        <br>
+        &nbsp;&nbsp;
         <input type="submit" value="Analyse Your Documents!"  class="btn btn-default">
-
-    </form>
-    <form method="get" action="random">
+     </form>
+    
+    
+        <form method="get" action="random">
     <br><br>
         <input type="text" style="visibility: hidden" name="file" value="hello7.0">
         <input type="submit" value="Check Marks!"  class="btn btn-default">
 
     </form>
-</p>
-
-
-
-
-
-</form>
-
 </div>
 
 <script>             
@@ -55,5 +56,23 @@ function showTextArea() {
     document.getElementById('question').style.visibility="visible";
 document.getElementById('textAreaDiv').style.visibility="visible";
 document.getElementById('submission').style.visibility="visible";
+}
+function HandleBrowseClick()
+{
+    var fileinput = document.getElementById("browse");
+    fileinput.click();
+}
+
+function Handlechange()
+{
+    var fileinput = document.getElementById("browse");
+    var textinput = document.getElementById("filename");
+    textinput.value = fileinput.value;
+}
+function showBrowser(){
+    document.getElementById('browse').style.visibility="visible";
+    document.getElementById('filename').style.visibility="visible";
+    document.getElementById('fakeBrowse').style.visibility="visible";
+    
 }
 </script>
