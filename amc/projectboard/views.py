@@ -147,17 +147,7 @@ def markit2(request):
     return HttpResponseRedirect("/projectboard/base.html#/project2")
 #######################################################################
 
-def random(request):
-    os.system('sudo python /home/sony/environments/amc5.0/amc/projectboard/pypy.py')
-   # data = open('/').read()  # opens the json file and saves the raw contents
-    #jsonData = json.dumps(data)  #
 
-
-    with open('out.json', 'r') as f:
-        data = json.load(f)
-
-    return HttpResponse(data, content_type="application/json")
-#######################################################################
 def create_post(request):
     os.system('sudo python /root/Projects/intoJSON.py')
 
@@ -173,4 +163,26 @@ def create_post(request):
             json.dumps({"nothing to see": "this isn't happening"}),
             content_type="application/json"
         )
+#######################################################################
+def scan(request):
+    num=request.GET['num']
+    global file_name
+    title=file_name
+    print("************initiating amc_scans.py**************"+title+"******"+str(num)+"*****")
+
+    command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_scans.py " + title +" "+str(num)
+    os.system(command)
+    return HttpResponseRedirect("/projectboard/base.html#/project2")
+
+######################################################################
+def checkMate(request):
+    os.system('sudo python /home/sony/environments/amc5.0/amc/projectboard/pypy.py')
+   # data = open('/').read()  # opens the json file and saves the raw contents
+    #jsonData = json.dumps(data)  #
+
+
+    with open('out.json', 'r') as f:
+        data = json.load(f)
+
+    return HttpResponse(data, content_type="application/json")
 #######################################################################
