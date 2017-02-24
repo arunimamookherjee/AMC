@@ -31,8 +31,9 @@ urlpatterns = [
     url(r'^modify$',views.modify, name='modify'),
     url(r'^markit$', views.markit, name='markit'),
     url(r'^markit2$', views.markit2, name='markit2'),
-    url(r'^random$', views.random, name='random'),
+    url(r'^checkMate$', views.checkMate, name='checkMate'),
     url(r'^dash$', views.dash, name='dash'),
     url(r'create_post', views.create_post, name='create_post'),
-    url(r'^view$', views.view, name='view')
+    url(r'^view$', views.view, name='view'),
+    url(r'^scan$', views.scan, name='scan')
     ]
