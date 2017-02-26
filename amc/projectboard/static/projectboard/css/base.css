@@ -1,7 +1,6 @@
 
-
 html, body {
-	height:80%;
+	height:120%;
 	}
 	 div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -251,3 +250,18 @@ table {
     height:25px;
     width: 275px;
   }
+.firstbutton {
+	float: right;
+	clear: both;
+	object-position: absolute;
+}
+.otherbutton {
+	text-align: right;
+		clear: both;
+ object-position: absolute;
+}
+.thirdbutton{
+   float: right;
+   object-position: absolute;
+   clear: both;
+}
