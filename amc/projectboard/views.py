@@ -176,13 +176,34 @@ def scan(request):
 
 ######################################################################
 def checkMate(request):
-    os.system('sudo python /home/sony/environments/amc5.0/amc/projectboard/pypy.py')
-   # data = open('/').read()  # opens the json file and saves the raw contents
-    #jsonData = json.dumps(data)  #
+    global file_name, ftype
+    title = file_name
+    type=ftype
+
+    print("************initiating amc_check.py**************" + title + "******"+type+"*****")
+
+    if type=="latex":
+        command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_check.py " + title + " tex"
+    elif type=="amc":
+        command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_check.py " + title + " txt"
+
+    os.system(command)
 
 
-    with open('out.json', 'r') as f:
-        data = json.load(f)
+    return HttpResponseRedirect("/projectboard/base.html#/project2")
 
-    return HttpResponse(data, content_type="application/json")
 #######################################################################
+
+def associate(request):
+    global file_name, ftype
+    title = file_name
+    type = ftype
+
+    print("************initiating amc_associate.py**************" + title + "*********")
+    command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_associate.py " + title
+
+    os.system(command)
+
+    return HttpResponseRedirect("/projectboard/base.html#/project2")
+
+########################################################################

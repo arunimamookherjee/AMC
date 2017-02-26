@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'^markit$', views.markit, name='markit'),
     url(r'^markit2$', views.markit2, name='markit2'),
     url(r'^checkMate$', views.checkMate, name='checkMate'),
+    url(r'^associate$', views.associate, name='associate'),
     url(r'^dash$', views.dash, name='dash'),
     url(r'create_post', views.create_post, name='create_post'),
     url(r'^view$', views.view, name='view'),

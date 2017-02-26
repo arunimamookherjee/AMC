@@ -22,7 +22,7 @@ os.system(command2)
 command3="sudo auto-multiple-choice meptex --src /root/Projects/"+sys.argv[1]+"/DOC-calage.xy --data /root/Projects/"+sys.argv[1]+"/data"
 os.system(command3)
 
-command4 = "auto-multiple-choice meptex  --src /root/Projects/" + sys.argv[1]
+command4 = "sudo auto-multiple-choice meptex  --src /root/Projects/" + sys.argv[1]
 com1 = "/DOC-calage.xy --progression-id MEP --progression 1 --data /root/Projects/" +sys.argv[1] + "/data"
 command4 += com1
 os.system(command4)
