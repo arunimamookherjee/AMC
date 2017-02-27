@@ -15,7 +15,7 @@ from django.http import HttpResponse
 
 file_name=""
 ftype=""
-
+no=0
 
 
 
@@ -166,8 +166,9 @@ def create_post(request):
 #######################################################################
 def scan(request):
     num=request.GET['num']
-    global file_name
+    global file_name, no
     title=file_name
+    no=num
     print("************initiating amc_scans.py**************"+title+"******"+str(num)+"*****")
 
     command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_scans.py " + title +" "+str(num)
@@ -195,12 +196,14 @@ def checkMate(request):
 #######################################################################
 
 def associate(request):
-    global file_name, ftype
+    global file_name, ftype, no
     title = file_name
     type = ftype
+    num=no
 
-    print("************initiating amc_associate.py**************" + title + "*********")
-    command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_associate.py " + title
+    print("************initiating amc_associate.py**************" + title + "*********"+num)
+    command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_associate.py " + title+" "+str(num)
+
 
     os.system(command)
 
