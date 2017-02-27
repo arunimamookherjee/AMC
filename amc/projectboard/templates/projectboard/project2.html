@@ -18,16 +18,22 @@
 
 
 
-    <form method="get" action="modify">
+
+        <form method="get" action="modify">
 
          <div id="invisi" class="btn btn-default" onclick="showTextArea()">Not happy with the question paper... modify it!"</div>
         <br><br>
-            <div id="question" style="visibility: hidden;"><h4>No. of Question papers</h4><input type="text" name="number"></div>
+        <div id="pop" style="visibility: hidden;">
+           <button id="close" onclick="document.getElementById('pop').style.display='none'">X</button><br>
+            <div class="firstbutton" id="question"><h4>No. of Question papers</h4><input type="text" name="number"></div>
+
             <br>
-            <div id="textAreaDiv"  style="visibility:hidden;"><textarea rows="20" cols="40"></textarea></div>
+            <div class="otherbutton" id="textAreaDiv"><textarea name="name2"  id="inputTextToSave" rows="20" cols="40" ></textarea></div>
+
             <br>
-            <div id="submission" style="visibility: hidden;"><input type="submit" value="Modify" class="btn btn-default"></div>
-     </form>
+            <div class="thirdbutton" id="submission"><input type="submit" value="Modify" class="btn btn-default"></div>
+        </div>
+        </form>
 
 
     <br><br>
@@ -55,13 +61,30 @@
 
 <script>
 
-
-
-    function showTextArea() {
-        document.getElementById('question').style.visibility="visible";
-        document.getElementById('textAreaDiv').style.visibility="visible";
-        document.getElementById('submission').style.visibility="visible";
+function showTextArea() {
+//     document.getElementById('question').style.visibility="visible";
+// document.getElementById('textAreaDiv').style.visibility="visible";
+// document.getElementById('submission').style.visibility="visible";
+document.getElementById('pop').style.visibility="visible";
 }
 
+function HandleBrowseClick()
+{
+    var fileinput = document.getElementById("browse");
+    fileinput.click();
+}
+function Handlechange()
+{
+    var fileinput = document.getElementById("browse");
+    var textinput = document.getElementById("filename");
+    textinput.value = fileinput.value;
+}
+function showBrowser(){
+    document.getElementById('browse').style.visibility="visible";
+    document.getElementById('filename').style.visibility="visible";
+    document.getElementById('fakeBrowse').style.visibility="visible";
+
+}
+</script>
 </script>
 </div>

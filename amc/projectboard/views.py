@@ -201,8 +201,12 @@ def associate(request):
     type = ftype
     num=no
 
-    print("************initiating amc_associate.py**************" + title + "*********"+num)
-    command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_associate.py " + title+" "+str(num)
+    print("************initiating amc_associate.py**************" + title + "*********")
+    if type == "latex":
+            command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_associate.py " + title+" "+str(num)+ " tex"
+    elif type =="amc":
+        command = "sudo python /home/sony/environments/amc5.0/amc/projectboard/amc_associate.py " + title + " " + str(
+            num) + " txt"
 
 
     os.system(command)

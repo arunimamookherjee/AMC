@@ -14,7 +14,7 @@ print ("............Scans.py..............")
 
 
 
-com1="sudo auto-multiple-choice prepare --mode b --prefix ./ ./test.tex --data ./data/"
+com1="sudo auto-multiple-choice prepare --mode b --prefix ./ ./test."+sys.argv[1]+" --data ./data/"
 os.system(com1)
 
 
@@ -33,7 +33,7 @@ com1="sudo auto-multiple-choice prepare --mode b --prefix ./ ./test.tex --data .
 os.system(com1)
 
 com2="sudo auto-multiple-choice prepare --n-copies 4 --with pdflatex" \
-     " --filter latex --filtered-source /root/Projects/"+sys.argv[1]+"/DOC-filtered.tex --progression-id bareme --data /root/Projects/"+sys.argv[1]+"/data --mode b /root/Projects/"+sys.argv[1]+"/test.tex"
+     " --filter latex --filtered-source /root/Projects/"+sys.argv[1]+"/DOC-filtered.tex --progression-id bareme --data /root/Projects/"+sys.argv[1]+"/data --mode b /root/Projects/"+sys.argv[1]+"/test.."+ sys.argv[1]
 os.system(com2)
 
 os.system("sudo auto-multiple-choice note --data ./data - --seuil 0.15 --grain 0.5 --arrondi s --notemin min --notemax max --no-plafond ")
