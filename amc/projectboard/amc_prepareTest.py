@@ -10,7 +10,7 @@ os.system('ls')
 
 command1=" sudo auto-multiple-choice prepare --mode s --prefix ./ ./test.tex --out-sujet DOC-subject.pdf \
     --out-corrige DOC-correction.pdf \
-    --out-calage DOC-calage.xy --n-copies "+sys.argv[2]+" source.tex "
+    --out-calage DOC-calage.xy --n-copies "+sys.argv[2]+" test.tex "
 
 os.system(command1)
 os.system('ls')

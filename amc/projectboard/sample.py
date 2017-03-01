@@ -1,7 +1,39 @@
-import csv
+import csv, os,sys
+
+
+
 i=0
-with open('/home/sony/Desktop/als.csv') as csvfile:
-   reader = csv.DictReader(csvfile)
-   for row in reader:
-        print(row['name'])
-        print(row['forenama'])
+
+
+os.chdir('/root')
+os.chdir("Projects")
+os.chdir(sys.argv[1])
+os.system('pwd')
+os.system('ls')
+
+
+doc = ezodf.opendoc('some_odf_spreadsheet.ods')
+
+print("Spreadsheet contains %d sheet(s)." % len(doc.sheets))
+for sheet in doc.sheets:
+    print("-" * 40)
+    print("   Sheet name : '%s'" % sheet.name)
+    print("Size of Sheet : (rows=%d, cols=%d)" % (sheet.nrows(), sheet.ncols()))
+
+# convert the first sheet to a pandas.DataFrame
+sheet = doc.sheets[0]
+df_dict = {}
+for i, row in enumerate(sheet.rows()):
+    # row is a list of cells
+    # assume the header is on the first row
+    if i == 0:
+        # columns as lists in a dictionary
+        df_dict = {cell.value: [] for cell in row}
+        # create index for the column headers
+        col_index = {j: cell.value for j, cell in enumerate(row)}
+        continue
+    for j, cell in enumerate(row):
+        # use header instead of column index
+        df_dict[col_index[j]].append(cell.value)
+# and convert to a DataFrame
+df = pd.DataFrame(df_dict)

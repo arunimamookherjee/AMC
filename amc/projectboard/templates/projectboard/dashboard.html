@@ -39,14 +39,12 @@
               var form = document.getElementById("myform");
               form.submit();
         }
-
         function display(){
-
           for(i=0;i<obj.length;i++)
           {
           var myFileName = obj[i].name;
           var myFileExt = myFileName.substr((myFileName.lastIndexOf('.') + 1));
-            if(myFileExt=="sh" || myFileExt=="sh~" || myFileExt=="py" || myFileExt=="txt" || myFileExt=="tex" || myFileExt=="py~"|| myFileExt=="json~")
+            if(myFileExt=="sh" || myFileExt=="sh~" || myFileExt=="py" || myFileExt=="txt" || myFileExt=="tex" || myFileExt=="py~"|| myFileName=="new_project~"|| myFileExt=="json~")
             {
               console.log(" ");
             }
@@ -56,6 +54,5 @@
             }
           }
         }
-
       </script>
 </div>

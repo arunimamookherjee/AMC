@@ -214,3 +214,11 @@ def associate(request):
     return HttpResponseRedirect("/projectboard/base.html#/project2")
 
 ########################################################################
+
+def show():
+    global file_name
+    title = file_name
+
+
+
+    return HttpResponseRedirect("/projectboard/base.html#/project2")
